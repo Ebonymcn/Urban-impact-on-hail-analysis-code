@@ -1,0 +1,37 @@
+&share
+ wrf_core = 'ARW',
+ max_dom = 2,
+ start_date = '2018-12-17_00:00:00', '2018-12-17_00:00:00',
+ end_date = '2018-12-20_16:00:00', '2018-12-20_16:00:00',
+ interval_seconds = 3600,
+ debug_level = 0
+/
+
+&geogrid
+ parent_id		 = 1, 1,
+ parent_grid_ratio	 = 1, 5,
+ i_parent_start		 = 1, 78,
+ j_parent_start		 = 1, 68,
+ e_we			 = 238, 281,
+ e_sn			 = 201, 291,
+ geog_data_res		 = '5m', '5m',
+ dx = 5000,
+ dy = 5000,
+ map_proj		 = 'lambert',
+ ref_lat		 = -33.896,
+ ref_lon		 = 151.194,
+ truelat1		 = -34.024,
+ truelat2		 = -34.024,
+ stand_lon		 = 150.315,
+ geog_data_path = '/g/data/sx70/data/WPS_GEOG_v4/',
+/
+
+&ungrib
+ out_format = 'WPS',
+ prefix = 'FILE',
+/
+
+&metgrid
+ fg_name = 'FILE',
+/
+
